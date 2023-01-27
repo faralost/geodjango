@@ -1,15 +1,16 @@
 from django.contrib import admin
+from leaflet.admin import LeafletGeoAdmin, LeafletGeoAdminMixin
 
 from geoapp.models import Farmer, Season, Culture, Plot
 
 
-class PlotAdmin(admin.ModelAdmin):
+class PlotAdmin(LeafletGeoAdmin):
     list_display = ('id', 'farmer', 'season', 'culture',)
     list_filter = ('farmer', 'culture', 'season',)
     search_fields = ('farmer', 'culture', 'season',)
 
 
-class PlotInline(admin.StackedInline):
+class PlotInline(LeafletGeoAdminMixin, admin.StackedInline):
     model = Plot
     extra = 0
 
