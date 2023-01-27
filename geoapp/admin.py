@@ -16,6 +16,9 @@ class PlotInline(LeafletGeoAdminMixin, admin.StackedInline):
 
 
 class FarmerAdmin(admin.ModelAdmin):
+    list_display = ('id', 'full_name',)
+    search_fields = ('full_name',)
+    list_display_links = ('id', 'full_name',)
     inlines = [PlotInline, ]
 
 
