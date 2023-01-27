@@ -39,3 +39,8 @@ docker compose up --build -d
 <li>пароль: admin
 
 Пароли ко всем созданным пользователям такие же как их юзернеймы
+
+5. Доступные API урлы:
+<li>http://localhost:8000/api-geo/v1/plots/ - список земель фермера
+<li>http://localhost:8000/api-geo/v1/plots/id/ - детальный просмотр и изменение
+<li>http://localhost:8000/api-geo/v1/cultures/ - список культур
