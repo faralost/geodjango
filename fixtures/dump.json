@@ -1,0 +1,199 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$bW2loUPAP9MfQz8AZwQgIQ$oGdDlYpMx+iHTkHqBQAzGuA1p8EuCLwz5/4qAcrcaXA=",
+    "last_login": "2023-01-27T16:15:24.443Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-01-27T08:58:56.974Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$Aewo00ydq0K3MgmgUTWU1l$CaHnEG4tiTpzZJtISROcCGeDYLvsH81ESwx23tYiz24=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "vasyapupkin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-01-27T11:31:23.530Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$mt1d1b5dibhHnJIh8zUyzt$5wBKwm6oGGc5Pk02o4T3RzCHayAtjm66O8d6iOeyN+o=",
+    "last_login": "2023-01-27T15:53:53.392Z",
+    "is_superuser": false,
+    "username": "johndoe",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-01-27T11:31:43.654Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$kOm0IJpOhzqUlPCkEJGnPt$rxX9S/i72k4fl23Eo5Bxw3QnY5U4hJ+qjSeLJzlMOio=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "temirtemirov",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-01-27T11:32:07.840Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "geoapp.farmer",
+  "pk": 1,
+  "fields": {
+    "full_name": "John Doe",
+    "user": [
+      "johndoe"
+    ]
+  }
+},
+{
+  "model": "geoapp.farmer",
+  "pk": 2,
+  "fields": {
+    "full_name": "Vasya Pupkin",
+    "user": [
+      "vasyapupkin"
+    ]
+  }
+},
+{
+  "model": "geoapp.farmer",
+  "pk": 3,
+  "fields": {
+    "full_name": "Temir Temirov",
+    "user": [
+      "temirtemirov"
+    ]
+  }
+},
+{
+  "model": "geoapp.farmer",
+  "pk": 6,
+  "fields": {
+    "full_name": "Admin",
+    "user": [
+      "admin"
+    ]
+  }
+},
+{
+  "model": "geoapp.season",
+  "pk": 1,
+  "fields": {
+    "title": "Season 1"
+  }
+},
+{
+  "model": "geoapp.season",
+  "pk": 2,
+  "fields": {
+    "title": "Season 2"
+  }
+},
+{
+  "model": "geoapp.culture",
+  "pk": 1,
+  "fields": {
+    "title": "Corn"
+  }
+},
+{
+  "model": "geoapp.culture",
+  "pk": 2,
+  "fields": {
+    "title": "Wheat"
+  }
+},
+{
+  "model": "geoapp.culture",
+  "pk": 3,
+  "fields": {
+    "title": "Potato"
+  }
+},
+{
+  "model": "geoapp.plot",
+  "pk": 1,
+  "fields": {
+    "contour": "SRID=4326;POLYGON ((76.0054310025651 42.5061992280865, 75.96407636026358 42.52190787625547, 75.80010948683675 42.50754346999424, 75.77667406729471 42.37621695525277, 76.0000036447362 42.3172630997902, 76.07308227053056 42.39206035808417, 76.0054310025651 42.5061992280865))",
+    "farmer": 1,
+    "culture": 3,
+    "season": 1
+  }
+},
+{
+  "model": "geoapp.plot",
+  "pk": 2,
+  "fields": {
+    "contour": "SRID=4326;POLYGON ((35.4935684857338 22.56798237151454, 35.68777243331587 22.55297899553927, 35.70005294041566 22.35645799238316, 35.68327054975275 22.35712246099455, 35.4935684857338 22.56798237151454))",
+    "farmer": 2,
+    "culture": 2,
+    "season": 1
+  }
+},
+{
+  "model": "geoapp.plot",
+  "pk": 3,
+  "fields": {
+    "contour": "SRID=4326;POLYGON ((39.07052429371397 15.46034279883139, 39.18533563613892 14.96984823216986, 38.72511148452759 14.85906227755583, 38.65848541259766 15.21176851148514, 38.63295078277587 15.38436362084573, 39.07052429371397 15.46034279883139))",
+    "farmer": 2,
+    "culture": 3,
+    "season": 1
+  }
+},
+{
+  "model": "geoapp.plot",
+  "pk": 4,
+  "fields": {
+    "contour": "SRID=4326;POLYGON ((76.24274 42.48091, 76.237368 42.47862, 76.236797 42.474772, 76.235463 42.473795, 76.24405 42.463409, 76.27179099999999 42.473621, 76.262861 42.48041, 76.256142 42.478029, 76.25077400000001 42.483511, 76.24274 42.48091))",
+    "farmer": 1,
+    "culture": 2,
+    "season": 2
+  }
+},
+{
+  "model": "geoapp.plot",
+  "pk": 5,
+  "fields": {
+    "contour": "SRID=4326;POLYGON ((74.743099 42.86446, 74.751079 42.850543, 74.76917299999999 42.855618, 74.771276 42.866095, 74.767067 42.869178, 74.743099 42.86446))",
+    "farmer": 3,
+    "culture": null,
+    "season": 1
+  }
+}
+]

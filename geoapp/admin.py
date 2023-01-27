@@ -8,6 +8,7 @@ class PlotAdmin(LeafletGeoAdmin):
     list_display = ('id', 'farmer', 'season', 'culture',)
     list_filter = ('farmer', 'culture', 'season',)
     search_fields = ('farmer', 'culture', 'season',)
+    list_display_links = ('id', 'farmer',)
 
 
 class PlotInline(LeafletGeoAdminMixin, admin.StackedInline):

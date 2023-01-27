@@ -9,6 +9,7 @@ RUN apt-get install -y libffi-dev
 RUN apt-get install -y gdal-bin libgdal-dev
 RUN apt-get install -y python3-gdal
 RUN apt-get install -y binutils libproj-dev
+RUN apt install -y netcat
 
 WORKDIR /usr/src/app
 
