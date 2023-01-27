@@ -22,3 +22,11 @@ class Culture(models.Model):
         return f'{self.title}'
 
 
+class Plot(models.Model):
+    contour = models.PolygonField()
+    farmer = models.ForeignKey('geoapp.Farmer', on_delete=models.PROTECT, related_name='plots')
+    culture = models.ForeignKey('geoapp.Culture', on_delete=models.PROTECT, related_name='plots')
+    season = models.ForeignKey('geoapp.Season', on_delete=models.PROTECT, related_name='plots')
+
+    def __str__(self):
+        return f'Plot of {self.farmer}'
