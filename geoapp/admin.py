@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from geoapp.models import Farmer, Season, Culture
+
+admin.site.register(Farmer)
+admin.site.register(Season)
+admin.site.register(Culture)
